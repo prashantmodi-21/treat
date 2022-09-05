@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+}
+
+nav {
+    display: flex;
+    line-height: 4rem;
+
+}
+
+#brand-logo {
+    width: 20%;
+    text-align: center;
+}
+
+#brand-logo a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+#navbar {
+    width: 60%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 0px 30px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar li a:hover {
+
+    font-weight: bolder;
+}
+
+#social-icon {
+    width: 20%;
+    text-align: center;
+    filter: invert();
+}
+
+#social-icon i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#home::before {
+    background: #00000050 url(../img/pexels-chan-walrus-941861.jpg) no-repeat center center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 130vh;
+    z-index: -1;
+}
+
+#home {
+
+    height: 100vh;
+}
+
+#home-content {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#home-content h1 {
+    font-size: 3rem;
+}
+
+#about {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#about-image {
+    text-align: center;
+}
+
+#about-image img {
+    width: 350px;
+
+}
+
+#about-layout {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 15px;
+    border: 2px solid #304d56;
+}
+
+#about-content h2 {
+    padding: 15px;
+}
+
+#about-content p {
+    padding: 15px;
+}
+
+#menu {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#menu-header {
+    height: 100px;
+    background-color: #b79a72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 95%; */
+    text-align: center;
+    margin-bottom: 50px;
+    /* border: 2px solid white; */
+}
+
+#menu-header h2 {
+    border: 2px solid #304d56;
+    ;
+    color: #304d56;
+    width: 98%;
+}
+
+#menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 80%; */
+}
+
+.menu-items {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid #b79a72;
+
+}
+
+.item-img img {
+    width: 200px;
+
+}
+
+.item-detail {
+    padding: 15px;
+}
+
+.item-detail p {
+    padding: 0px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+#our-client {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#our-client img {
+    width: 150px;
+    border-radius: 75px;
+    padding: 5px;
+}
+
+.client {
+    text-align: center;
+    padding: 15px;
+    /* border: 1px solid gray; */
+    margin: 15px;
+    box-shadow: 0px 0px 4px 4px #b79a72;
+    border-radius: 30px;
+}
+
+#contact {
+    background: url(../img/pexels-huy-phan-1397514.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+    margin: 50px 0px;
+    /* padding: 50px; */
+    display: flex;
+    justify-content: center;
+
+}
+
+#contact-layout {
+    width: 450px;
+    height: 425px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 145px;
+}
+
+#contact-layout p {
+    padding: 5px;
+}
+
+footer {
+    height: 400px;
+
+    background: rgba(0, 0, 0, 0.8) url(../img/restaurant-g53800a2db_1920.jpg) no-repeat center center/cover;
+    background-blend-mode: darken;
+    width: 100%;
+}
+
+/* footer::before{
+    background: black;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+} */
+#main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1rem;
+    height: 350px;
+    align-items: center;
+    color: white;
+}
+
+#main-content ul {
+    text-align: center;
+}
+
+#main-content ul li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#about-brand h3 {
+    font-size: 1.5rem
+}
+
+#copy {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Utiliy CLasses */
+.checked {
+    color: orange;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.clr {
+    color: white;
+}
+
+.heading-primary {
+    font-size: 3rem;
+}
+
+/* Responsive Css */
+
+@media only screen and (max-width: 1240px) {
+
+    /* #home::before{
+        height: 100%;
+    } */
+    #about-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+
+    }
+
+    #about-image img {
+        width: 80%;
+    }
+
+    #about-content {
+        overflow: hidden;
+    }
+
+    /* #about-image img{
+        max-width: 900px;
+    } */
+}
+
+@media only screen and (max-width: 1000px) {
+    #menu-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #our-client {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #contact-layout {
+        width: 450px;
+        height: 425px;
+    }
+
+    #about {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #social-icon {
+        width: 100%;
+    }
+
+    #home {
+        height: 62vh;
+    }
+
+    #home::before {
+
+        height: 120vh;
+
+    }
+
+    #home-content {
+        height: 65vh;
+        align-items: center;
+    }
+
+    #about-content {
+        overflow: hidden;
+    }
+
+    #about-content p {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    #about-content h2 {
+
+        padding: 5px;
+    }
+
+    #about-layout {
+        grid-gap: 1rem;
+    }
+
+    #contact {
+        justify-content: center;
+    }
+
+    #contact-layout {
+        width: 350px;
+        height: 325px;
+        left: 20px;
+    }
+
+    #main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        align-items: center;
+
+    }
+
+    #about-brand {
+        padding: 15px;
+    }
+
+    footer {
+        height: 500px;
+    }
+
+    #main-content {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home-content {
+        height: 31vh;
+
+    }
+
+    #home-content h1 {
+        font-size: 2.5rem;
+
+    }
+
+    #home {
+        height: 40vh;
+    }
+
+    #home::before {
+        height: 130vh;
+    }
+
+    #about-content {
+        overflow: hidden;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 120px;
+        text-align: center;
+    }
+}
